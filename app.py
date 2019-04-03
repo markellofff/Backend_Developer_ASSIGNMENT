@@ -2,7 +2,7 @@ from flask import Flask, request
 from flask_restful import Resource, Api
 import sqlite3
 
-# Starting pur app
+# Starting our app
 app = Flask(__name__)
 api = Api(app)
 
@@ -26,6 +26,7 @@ class Show_users(Resource):
 
 
 # showing data by its unique id
+
 class Show_user(Resource):
     def get(self, id):
         db = sqlite3.connect('database.db')
@@ -46,6 +47,7 @@ class Show_user(Resource):
 
 
 # creating a new user
+
 class Create_User(Resource):
     def post(self, id):
         # if the user{id} already exists
@@ -76,6 +78,7 @@ class Create_User(Resource):
 
 
 # For deleting the user of specific id
+
 class Delete_User(Resource):
     def delete(self, id):
         db = sqlite3.connect('database.db')
@@ -89,7 +92,7 @@ class Delete_User(Resource):
         else:
             return {'message': "user having id {} doesn't  exists in our database".format(id)}, 404
 
-
+# For Updating user's Info
 class Update_user(Resource):
     def put(self, id):
         db = sqlite3.connect('database.db')
