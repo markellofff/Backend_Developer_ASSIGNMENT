@@ -36,7 +36,7 @@ Endpoints
     ( http://127.0.0.1:5000/users/601 and json payload is raw in postman app)
     For posting data in database you have to setup postman app 
     setting up Postman App:-
-    1. goto Headers in postman app and enter in Content-Type key coloumn and application/json in value coloumn.
+    1. goto Headers in postman app and enter  Content-Type in key coloumn and application/json in value coloumn.
         for reference see image file headers.png
     2. goto body in postman app and select raw and write in the following json format
         for reference see image file body.png
@@ -58,7 +58,7 @@ Endpoints
      Example  http://127.0.0.1:5000/users/601
      For Updating data in database you have to setup postman app 
     setting up Postman App:-
-    1. goto Headers in postman app and enter in Content-Type key coloumn and application/json in value coloumn.
+    1. goto Headers in postman app and enter  Content-Type in key coloumn and application/json in value coloumn.
         for reference see image file headers.png
     2. goto body in postman app then select raw and write in the following json format
         for reference see image file body.png
